@@ -1,7 +1,30 @@
 aid: roby
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/roby.png
 name: Roby
-description: Roby is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Roby (Imageous, Inc.) is a Seattle-based building-management software company
+  whose HVAC automation product connects room and space calendars with a
+  building's BMS (building management system) to automatically switch HVAC to an
+  unoccupied/energy-saving mode when spaces are not in use, delivering measured
+  energy savings and extended equipment lifetime for K-12, higher-education, and
+  office facilities without added staff effort. Roby is deployed through building
+  system integrators (ATS, Climatec, Syserco, ABM Systems, Oprizon, NSF-E) and
+  also offers Receptionist and Helpdesk workplace applications. The product uses
+  Auth0-managed authentication with token-based, SSL-only API access, but does
+  not currently publish a public developer API, OpenAPI specification, SDKs, or
+  developer portal. Surfaced as a Techstars portfolio company and added to the
+  API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/roby/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- HVAC
+- Building Management
+- Energy Efficiency
+- Automation
+- Facilities
+- Sustainability
+- Workplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/roby-domain-security.yml
 - type: Website
   url: https://tellroby.com/
+- type: Login
+  url: https://bms.tellroby.com/dealer/login
+- type: Support
+  url: https://tellroby.com/support.html
+- type: TermsOfService
+  url: https://tellroby.com/terms-of-service.html
+- type: PrivacyPolicy
+  url: https://tellroby.com/privacy-policy.html
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
